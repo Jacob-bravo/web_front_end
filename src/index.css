@@ -1,0 +1,29 @@
+
+:root{
+  --background:rgba(54,208,112,255);
+  --secondary-color:rgba(132,215,161,255);
+  --border-color:rgba(113,122,116,255);
+  --primary-color:rgba(73,216,116,255);
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+*{
+  box-sizing: border-box;;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  width: 5px;
+}
