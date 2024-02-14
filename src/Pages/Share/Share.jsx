@@ -30,7 +30,6 @@ const Share = () => {
         <CircleAvator title={'Snapchat'} />
         <CircleAvator title={'Facebook'} />
         <CircleAvator title={'Email'} />
-        <CircleAvator title={'Other'} />
       </div>
     </div>
   )

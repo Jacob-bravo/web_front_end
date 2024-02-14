@@ -1,6 +1,7 @@
 .container {
     width: 100vw;
     height: 100vh;
+    overflow: auto;
     align-items: center;
     padding-left: 10px;
     background: var(--background);
@@ -21,4 +22,16 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        overflow-x: hidden;
+    }
+    .team {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 }

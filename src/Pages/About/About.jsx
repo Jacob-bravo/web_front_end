@@ -5,6 +5,7 @@ import FAQ from '../../Components/FAQ';
 import css from "./About.module.css"
 
 const About = () => {
+
   return (
     <div className={css.container}>
       <Header title={'ABOUT'}/>
@@ -21,8 +22,12 @@ const About = () => {
 
       <h2>SUPPORT US</h2>
     <div className={css.FooterArea}>
-    <CircleAvator title={'SHARE'}/>
-      <CircleAvator title={'PAYPAL'}/>
+    <CircleAvator title={'SHARE'} onClick={()=>{
+       window.location.href = 'https://api.whatsapp.com/send?phone=0712540930';
+    }}/>
+      <CircleAvator title={'PAYPAL'} onClick={()=>{
+          window.location.href = 'https://www.paypal.com';
+      }}/>
     </div>
     </div>
   )

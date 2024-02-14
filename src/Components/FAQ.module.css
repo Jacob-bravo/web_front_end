@@ -9,16 +9,23 @@
 
 
 }
-.aboutContainer{
+
+.aboutContainer {
     cursor: pointer;
     background-color: var(--secondary-color);
     border: 1px solid var(--border-color);
     border-radius: 30px;
-    width: 40%;
+    width: 90%;
     text-align: center;
-    padding: 40px;  
+    padding: 40px;
 }
 
 .holderContainer>span {
     font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutContainer {
+        width: 90%;
+    }
 }
