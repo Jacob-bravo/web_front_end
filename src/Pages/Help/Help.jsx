@@ -12,7 +12,7 @@ const Help = () => {
     <div className={css.container}>
       <Header title={'Help'} />
       <div className={css.middleSection}>
-        <FAQ textWidget={'How to report my lost ID'} response={'Place response 1 here'} />
+        <FAQ textWidget={'How to report my lost ID'} response={'Knock knock jokes'} />
         <FAQ textWidget={'How to submit a lost ID'} response={'Place response 2 here'} />
         <FAQ textWidget={'How to know if my ID is found'} response={'Place response 3 here'} />
         <FAQ textWidget={'What to do if my ID is never recovered'} response={'Place response 4 here'} />

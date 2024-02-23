@@ -1,14 +1,13 @@
 import React from 'react'
 import Header from '../../Components/Header'
 import css from "./Share.module.css"
-import FAQ from '../../Components/FAQ'
 import { Warning } from '@mui/icons-material'
 import CircleAvator from '../../Components/CircleAvator'
 
-const SHAREFAQ = ({ textWidget, }) => {
+const SHAREFAQ = ({ textWidget, isHide }) => {
   return (
     <div className={css.shareFAQ}>
-      <Warning />
+      {isHide ? <Warning /> : null}
       <span>{textWidget}</span>
     </div>
   )
@@ -18,8 +17,8 @@ const Share = () => {
   return (
     <div className={css.container}>
       <Header title={'SHARE'} />
-      <FAQ textWidget={'Note that students may only use this platform..........'} />
-      <SHAREFAQ textWidget={'Do not share your logins or 2FA codes'} />
+      <SHAREFAQ isHide={false} textWidget={'Hello hello can you hear me . as i scream your name'} />
+      <SHAREFAQ isHide={true} textWidget={'Do not share your logins or 2FA codes'} />
       <h2>Share ID TRACKR with a fellow student</h2>
       <div className={css.shareArea}>
         <CircleAvator title={'Copy Link'} />
